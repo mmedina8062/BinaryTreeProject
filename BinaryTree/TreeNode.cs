@@ -65,7 +65,18 @@ namespace BinaryTree
             {
                 return this;
             }
-            else if (value > )
+            else if (value < Data && LeftNode != null)
+            {
+                return LeftNode.FindDataRecursive(value);
+            }
+            else if (value > data && RightNode != null)
+            {
+                return RightNode.FindDataRecursive(value);
+            }
+            else
+            {
+                return null;
+            }
         }
         
 

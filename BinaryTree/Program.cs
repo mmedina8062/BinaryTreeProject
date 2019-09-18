@@ -24,11 +24,17 @@ namespace BinaryTree
             binarySearchTree.Insert(30);
             binarySearchTree.Insert(79);
             binarySearchTree.Insert(55);
+            binarySearchTree.delete(80);
 
 
             Console.WriteLine("Binary Search Tree\n");
-            Console.WriteLine("In order traversal from LeftNode to Root to RightNode");
+
+            Console.WriteLine("In order traversal from LeftNode to Root to RightNode\n");
             binarySearchTree.InorderTraversal();
+
+            var FoundNode = binarySearchTree.FindDataRecursive(120);
+            Console.WriteLine("Match found: " + FoundNode.Data);
+
 
 
             
