@@ -45,9 +45,27 @@ namespace BinaryTree
                 }
                 else
                 {
-                    LeftNode.Insert(value);
+                    LeftNode.Insert(value); 
                 }
             }
+        }
+        public void InOrderTraversal()
+        {
+            if (LeftNode != null)
+                LeftNode.InOrderTraversal();
+            Console.WriteLine(data + " ");
+
+            if (RightNode != null)
+                RightNode.InOrderTraversal();
+        }
+
+        public TreeNode FindDataRecursive(int value)
+        {
+            if (value == data)
+            {
+                return this;
+            }
+            else if (value > )
         }
         
 

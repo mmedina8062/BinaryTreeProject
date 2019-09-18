@@ -16,7 +16,10 @@ namespace BinaryTree
 
         //ctor
       
-       
+        public BinarySearchTree()
+        {
+            
+        }
         
         //member methods
 
@@ -32,5 +35,22 @@ namespace BinaryTree
             }
         }
 
+        public void InorderTraversal()
+        {
+            if (root != null)
+                root.InOrderTraversal();
+        }
+
+        public TreeNode FindDataRecursive(int value)
+        {
+            if (root != null)
+            {
+                return root.FindDataRecursive(value);
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }

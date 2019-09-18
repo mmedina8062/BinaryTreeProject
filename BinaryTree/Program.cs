@@ -10,6 +10,32 @@ namespace BinaryTree
     {
         static void Main(string[] args)
         {
+            
+            BinarySearchTree binarySearchTree = new BinarySearchTree();
+
+
+            binarySearchTree.Insert(110);
+            binarySearchTree.Insert(80);
+            binarySearchTree.Insert(200);
+            binarySearchTree.Insert(210);
+            binarySearchTree.Insert(90);
+            binarySearchTree.Insert(120);
+            binarySearchTree.Insert(135);
+            binarySearchTree.Insert(30);
+            binarySearchTree.Insert(79);
+            binarySearchTree.Insert(55);
+
+
+            Console.WriteLine("Binary Search Tree\n");
+            Console.WriteLine("In order traversal from LeftNode to Root to RightNode");
+            binarySearchTree.InorderTraversal();
+
+
+            
+
+            
+
+            
         }
     }
 }
